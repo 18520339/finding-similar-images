@@ -2,7 +2,7 @@
 
 ![](https://github.com/18520339/find-similar-images/blob/main/images/image1.png?raw=true)
 
--   In my [Data Science project](https://github.com/18520339/vietnamese-foods), my team need to collect images through many kind of **Search Engines** for creating dataset and we chose **Google Sheets** for assigning labeling tasks to each member because of its convenient.
+-   In my [Data Science project](https://github.com/18520339/vietnamese-foods), my team needed to collect images through many kind of **Search Engines** for creating dataset and we chose **Google Sheets** for assigning labeling tasks to each member because of its convenient.
 
 -   There are lots of similar images when crawling from the Internet, this will cause bias in the dataset. Here is my solution to filtering them for the **Data Preparation step**.
 
@@ -19,7 +19,7 @@
 
 ![](https://github.com/18520339/find-similar-images/blob/main/images/image2.png?raw=true)
 
-5. Based on a **different points**. If 2 in these 3 values tell 2 images are similar => arrange them next to each other
+5. Based on a **different points**. If the distances of 2 in these 3 values of 2 images tell them images are similar => arrange them next to each other
 
     ```python
     distances = [ahash0 - ahash1, phash0 - phash1, dhash0 - dhash1]
