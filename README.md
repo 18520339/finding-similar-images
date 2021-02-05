@@ -4,14 +4,14 @@
 
 -   In my [Data Science project](https://github.com/18520339/vietnamese-foods), my team needed to collect images through many kind of **Search Engines** for creating dataset and we chose **Google Sheets** for assigning labeling tasks to each member because of its convenient.
 
--   There are lots of similar images when crawling from the Internet, this will cause bias in the dataset. Here is my solution to filtering them for the **Data Preparation step**.
+-   There are lots of similar images when crawling from the Internet, this will cause bias in the dataset. Here is my solution to filter them for the **Data Preparation** step.
 
 ## Implementation
 
 1. Crawling image urls from the **Search Engines**. I have a repo for that [here](https://github.com/18520339/image-search-downloader)
 2. Copy + paste these urls to **Google Sheets**. In here, we can see how similar images are arranged next to each other
 3. Connect to **Google Sheets** using **Python**
-4. If just using 1 hash value, some images will be said to be the same even if they are different. Therefore, we decided to caculate 3 hash values for each image:
+4. If just using 1 hash value, some images will be said to be the same even if they are different. Therefore, we decided to caculate 3 hash values for each 2 images:
 
     - Average hashing ([ahash](http://www.hackerfactor.com/blog/index.php?/archives/432-Looks-Like-It.html))
     - Perceptual hashing ([phash](http://www.hackerfactor.com/blog/index.php?/archives/432-Looks-Like-It.html))
@@ -19,7 +19,7 @@
 
 ![](https://github.com/18520339/find-similar-images/blob/main/images/image2.png?raw=true)
 
-5. Based on a **different points**. If the distances of 2 in these 3 values of 2 images tell them images are similar => arrange them next to each other
+5. If the distances of 2 in these 3 values tell 2 images are similar (&le; **different points**) then arrange these images next to each other
 
     ```python
     distances = [ahash0 - ahash1, phash0 - phash1, dhash0 - dhash1]
