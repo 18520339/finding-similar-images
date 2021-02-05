@@ -2,13 +2,13 @@
 
 ![](https://github.com/18520339/find-similar-images/blob/main/images/image1.png?raw=true)
 
--   In my [Data Science project](https://github.com/18520339/vietnamese-foods), my team needed to collect images through many kind of **Search Engines** for creating dataset and we chose **Google Sheets** for assigning labeling tasks to each member because of its convenient.
+-   In my [Data Science project](https://github.com/18520339/vietnamese-foods), my team needed to collect images through many kinds of **Search Engines** for creating dataset and we chose **Google Sheets** for assigning labeling tasks to each member because of its convenient.
 
--   There are lots of similar images when crawling from the Internet, this will cause bias in the dataset. Here is my solution to filter them for the **Data Preparation** step.
+-   There are lots of similar images when crawling from the Internet, this will result in biases in the dataset. Here is my solution to filter similar images for the **Data Preparation** step.
 
 ## Implementation
 
-1. Crawling image urls from the **Search Engines**. I have a repo for that [here](https://github.com/18520339/image-search-downloader)
+1. Get image urls from **Search Engines**. I have a repo for that [here](https://github.com/18520339/image-search-downloader)
 2. Copy + paste these urls to **Google Sheets**. In here, we can see how similar images are arranged next to each other
 3. Connect to **Google Sheets** using **Python**
 4. If just using 1 hash value, some images will be said to be the same even if they are different. Therefore, we decided to caculate 3 hash values for each 2 images:
@@ -37,7 +37,7 @@
 
 1. Install libraries: `pip install -r requirements.txt`
 
-2. Sorting similar images in **Google Sheets**:
+2. Sort similar images in **Google Sheets**:
 
 -   Example: `python sort_similar.py -s "example" -w "Sheet1" -r "B2:C" -a credentials.json`
 
