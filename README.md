@@ -29,6 +29,10 @@
         print(f'|--Similar with url {idx1 + 1}: {url1}')
     ```
 
+6. Decide what images to keep and begin labeling
+
+![](https://github.com/18520339/find-similar-images/blob/main/images/image3.png?raw=true)
+
 ## Usage
 
 1. Install libraries: `pip install -r requirements.txt`
