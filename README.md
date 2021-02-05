@@ -1,4 +1,4 @@
-# Find similar images after crawling from Search Engines
+# Finding similar images
 
 ![](https://github.com/18520339/find-similar-images/blob/main/images/image1.png?raw=true)
 
