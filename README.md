@@ -19,9 +19,7 @@
 
 ![](https://github.com/18520339/find-similar-images/blob/main/images/image2.png?raw=true)
 
-5. Based on a **different points**:
-
-    - if 2 in these 3 values tell 2 images are similar => arrange them next to each other
+5. Based on a **different points**. If 2 in these 3 values tell 2 images are similar => arrange them next to each other
 
     ```python
     distances = [ahash0 - ahash1, phash0 - phash1, dhash0 - dhash1]
@@ -37,35 +35,35 @@
 
 2. Sorting similar images in **Google Sheets**:
 
-    - Example: `python sort_similar.py -s "example" -w "Sheet1" -r "B2:C" -a credentials.json`
+-   Example: `python sort_similar.py -s "example" -w "Sheet1" -r "B2:C" -a credentials.json`
 
-    ```
-    usage: sort_similar.py [-h] -s SPREADSHEET -w WORKSHEET -r RANGE -a AUTH [-d DIFF]
+```
+usage: sort_similar.py [-h] -s SPREADSHEET -w WORKSHEET -r RANGE -a AUTH [-d DIFF]
 
-    optional arguments:
-    -h, --help                                    show this help message and exit
-    -s SPREADSHEET, --spreadsheet SPREADSHEET     spreadsheet name
-    -w WORKSHEET, --worksheet WORKSHEET           worksheet name
-    -r RANGE, --range RANGE                       updated range
-    -a AUTH, --auth AUTH                          credentials file
-    -d DIFF, --diff DIFF                          different points
-    ```
+optional arguments:
+-h, --help                                    show this help message and exit
+-s SPREADSHEET, --spreadsheet SPREADSHEET     spreadsheet name
+-w WORKSHEET, --worksheet WORKSHEET           worksheet name
+-r RANGE, --range RANGE                       updated range
+-a AUTH, --auth AUTH                          credentials file
+-d DIFF, --diff DIFF                          different points
+```
 
 3. Download images from urls in **Google Sheets**:
 
-    - Example: `python download_images.py -s "example" -w "Sheet1" -r "B2:C" -a credentials.json -o images/`
+-   Example: `python download_images.py -s "example" -w "Sheet1" -r "B2:C" -a credentials.json -o images/`
 
-    ```
-    usage: download_images.py [-h] -s SPREADSHEET -w WORKSHEET -r RANGE -a AUTH -o OUT
+```
+usage: download_images.py [-h] -s SPREADSHEET -w WORKSHEET -r RANGE -a AUTH -o OUT
 
-    optional arguments:
-    -h, --help                                    show this help message and exit
-    -s SPREADSHEET, --spreadsheet SPREADSHEET     spreadsheet name
-    -w WORKSHEET, --worksheet WORKSHEET           worksheet name
-    -r RANGE, --range RANGE                       updated range
-    -a AUTH, --auth AUTH                          credentials file
-    -o OUT, --out OUT                             path to images directory
-    ```
+optional arguments:
+-h, --help                                    show this help message and exit
+-s SPREADSHEET, --spreadsheet SPREADSHEET     spreadsheet name
+-w WORKSHEET, --worksheet WORKSHEET           worksheet name
+-r RANGE, --range RANGE                       updated range
+-a AUTH, --auth AUTH                          credentials file
+-o OUT, --out OUT                             path to images directory
+```
 
 ## Reference
 
