@@ -4,7 +4,7 @@
 
 ## Context
 
--   In my [Data Science project](https://github.com/18520339/vietnamese-foods), my team needed to collect images through many kinds of **Search Engines** for creating dataset and we chose **Google Sheets** for assigning labeling tasks to each member because of its convenient.
+-   In my [Data Science project](https://github.com/18520339/vietnamese-foods), my team had to collect images through many kinds of **Search Engines** for creating dataset and we chose **Google Sheets** for assigning labeling tasks to each member because of its convenient.
 
 -   There are lots of similar images when crawling from the Internet, this will result in biases in the dataset. Here is my solution to filter similar images for the **Data Preparation** step.
 
