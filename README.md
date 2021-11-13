@@ -2,7 +2,7 @@
 
 ![](https://github.com/18520339/find-similar-images/blob/main/images/image1.png?raw=true)
 
-## Context
+## Introduction
 
 -   In my [Data Science project](https://github.com/18520339/vietnamese-foods), my team had to collect images through many kinds of **Search Engines** for creating dataset and we chose **Google Sheets** for assigning labeling tasks to each member because of its convenient.
 
@@ -11,7 +11,7 @@
 ## Implementation
 
 1. Get image urls from **Search Engines**. I have a repo for that [here](https://github.com/18520339/image-search-downloader)
-2. Copy + paste these urls to **Google Sheets**. In here, we can see how similar images are arranged next to each other
+2. Copy + paste these urls to **Google Sheets**. Here, we can see how similar images arranged next to each other
 3. Connect to **Google Sheets** using **Python**
 4. If just using 1 hash value, some images will be said to be the same even if they are different. Therefore, we decided to caculate 3 hash values for each 2 images:
 
